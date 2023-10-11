@@ -14,8 +14,7 @@ signed main(){
 		ofstream fout("Recoder.txt");
 		fout<<"bs:"<<bs<<endl<<"Tab:"<<Tab<<endl<<"enter"<<enter<<endl<<"shift"<<shift<<endl<<"ctrl"<<ctrl<<endl<<"alt"<<alt<<endl<<"caps"<<caps<<endl;
 		fout<<"esc:"<<esc<<endl<<"space:"<<space<<endl<<"page_up"<<page_up<<endl<<"page_down"<<page_down<<endl<<"end"<<end<<endl<<"home"<<home<<endl<<"left_arrow"<<left_arrow<<endl;
-		fout<<"up_arrow"<<up_arrow<<endl<<"right_arrow"<<right_arrow<<endl<<"dw_arrow"<<dw_arrow<<endl; 
-		if (_kbhit()){
+		fout<<"up_arrow"<<up_arrow<<endl<<"right_arrow"<<right_arrow<<endl<<"dw_arrow"<<dw_arrow<<endl;
 			key = _getch();
 			if (key == 8)
 				bs++;
@@ -151,8 +150,6 @@ signed main(){
 				eight++;
 			else if (key == 57)
 				nine++;
-			break;
-		}
 	}
 	return 0;
 }
